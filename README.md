@@ -2,7 +2,9 @@
 
 Fetches AllSets.json from http://mtgjson.com and caches it so you are always sure to have the newest version.
 
-Also - the JSON data is collected by @Sembiance, https://github.com/Sembiance/mtgjson
+Includes the latest version of `AllSets.json` (2014-06-29) to make loading time faster.
+
+Note - the JSON data is collected by @Sembiance, https://github.com/Sembiance/mtgjson.
 
 ## Installation
 
