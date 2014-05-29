@@ -13,7 +13,8 @@ module.exports = function(callback) {
 		var localEtag = data.toString();
 
 		req(URL, {headers:{'if-none-match':localEtag}}, function(err, res) {
-			if (res.statusCode === 304) {
+			var noInternetConnection = !!err;
+			if (noInternetConnection || res.statusCode === 304) {
 				return fs.readFile(DATA_FILE, function(err, data) {
 					if (err) return callback(err);
 
