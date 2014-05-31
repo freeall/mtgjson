@@ -22,10 +22,10 @@ module.exports = function(callback) {
 				});
 			}
 
-			fs.writeFile(ETAG_FILE, res.headers.etag, function(err) {
+			fs.writeFile(DATA_FILE, res.body, function(err) {
 				if (err) return callback(err);
 
-				fs.writeFile(DATA_FILE, res.body, function(err) {
+				fs.writeFile(ETAG_FILE, res.headers.etag, function(err) {
 					if (err) return callback(err);
 
 					callback(null, JSON.parse(res.body));
