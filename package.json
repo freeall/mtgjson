@@ -1,6 +1,6 @@
 {
   "name": "mtgjson",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Download AllSets.json from mtgjson.com and use it to find Magic: The Gathering cards. Makes sure that the JSON data is always the newest.",
   "keywords": [
     "magic",
