@@ -2,7 +2,7 @@
 
 Fetches AllSets.json from http://mtgjson.com and caches it so you are always sure to have the newest version.
 
-Includes the latest version of `AllSets.json` (2014-06-29) to make loading time faster.
+Includes `AllSets.json` to make loading time faster. This module follow the versioning of mtgjson.com.
 
 Note - the JSON data is collected by @Sembiance, https://github.com/Sembiance/mtgjson.
 
